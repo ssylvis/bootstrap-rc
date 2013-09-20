@@ -1,0 +1,39 @@
+[user]
+	email = sean@cardspring.com
+	name = Sean Sylvis
+[alias]
+	a = add
+	ap = add --patch
+	alias = !git config -l | grep alias
+	b = branch
+	bd = branch -d
+	bdd = branch -D
+	bm = branch -m
+	c = commit
+	ce = commit --allow-empty
+	co = checkout
+	cob = checkout -b
+	com = checkout master
+	cpush = commit --amend
+	cpusha = "!git add .; git commit --amend --no-edit"
+	cpushe = commit --amend --no-edit
+	diffg = !git diff HEAD^ | tig
+	diffh = diff HEAD^
+	diffs = diff HEAD^ --stat=100,80
+	logd = "!f() { git log --format='%h %C(yellow)(%an) %Creset%s (%cr)' $1..; }; f"
+	logg = "!f() { git log --format='%h %C(yellow)(%an)%C(cyan)%d%Creset %s (%cr)' --grep=$1 --regexp-ignore-case --extended-regexp; }; f"
+	logh = !git log --format='%h %C(yellow)(%an)%C(cyan)%d%Creset %s (%cr)' -n 10 | cut -c -140
+	prune = remote prune origin
+	pullo = pull origin
+	pushf = push -f origin
+	pushm = push origin master
+	pusho = push origin
+	re = rebase
+	rea = rebase --abort
+	rec = rebase --continue
+	rei = rebase -i
+	rem = rebase -i master
+	resth = reset --hard
+	s = status
+[core]
+	editor = vi

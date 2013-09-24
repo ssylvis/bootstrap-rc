@@ -1,5 +1,14 @@
-" Disable vi compatibility
-set nocompatible
+set nocompatible                                       " Disable vi compatibility
+set hlsearch                                           " Enable search highlighting
+set laststatus=2                                       " Always show status line
+set number                                             " Show line numbers on left margin
+set list                                               " Show tabs and trailing spaces
+set listchars=tab:> ,trail:·
+set mouse=a                                            " Enable mouse scroll wheel
+set t_Co=256                                           " Use 256 colors
+set wildmenu                                           " Change to bash-like tab-complete behavior
+set wildignore+=*.gem,*.git,*.svn,*.swp
+set wildmode=longest,list
 
 " Enable file type detection for indentation
 syntax on
@@ -21,10 +30,7 @@ nmap <leader>t :CtrlP<CR>
 nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
 nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
 
-" Use 256 colors
-set t_Co=256
-
-" Use dark solarized colorscheme
+" Dark solarized colorscheme
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
@@ -32,24 +38,3 @@ colorscheme solarized
 " Highlight area beyond column 120
 let &colorcolumn=join(range(121,999),",")
 highlight ColorColumn ctermbg=235
-
-" Enable search highlighting
-set hlsearch
-
-" Always show status line
-set laststatus=2
-
-" Show line numbers on left margin
-set number
-
-" Show tabs and trailing spaces
-set list
-set listchars=tab:> ,trail:·
-
-" Enable mouse scroll wheel
-set mouse=a
-
-" Change to bash-like tab-complete behavior
-set wildmenu
-set wildignore+=*.gem,*.git,*.svn,*.swp
-set wildmode=longest,list

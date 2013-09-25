@@ -1,5 +1,6 @@
 set nocompatible                                       " Disable vi compatibility
 set hlsearch                                           " Enable search highlighting
+set incsearch                                          " Highlight matches as you type
 set laststatus=2                                       " Always show status line
 set number                                             " Show line numbers on left margin
 set list                                               " Show tabs and trailing spaces

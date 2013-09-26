@@ -41,8 +41,12 @@ filetype plugin indent on
 " execute pathogen bundler
 execute pathogen#infect()
 
-" ignore vendor/bundle in ctrlp
-let g:ctrlp_custom_ignore = {'dir':  '\v[\/](vendor/bundle)$'}
+" ctrlp options
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/](\.git|\.hg|\.svn)|(vendor/bundle)$',
+  \ 'file': '\v\.(gitignore|gitkeep|rspec)$'
+  \ }                                                   " ignore repo directories
+let g:ctrlp_show_hidden = 1                             " search hidden (dot) files
 
 " dark solarized colorscheme
 set background=dark

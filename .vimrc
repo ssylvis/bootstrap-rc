@@ -11,16 +11,19 @@ set wildmenu                                           " change to bash-like tab
 set wildignore+=*.gem,*.git,*.svn,*.swp
 set wildmode=longest,list
 
-" leader character mappings
-let mapleader = ','                                    " define leading character
-nnoremap <leader>b :CtrlPBuffer<CR>                    " search currently opened files
-nnoremap <leader>s :set hlsearch!<CR>                  " toggle search highlight
-nnoremap <leader>t :CtrlP<CR>                          " search files in current dir (or ancestor git repo)
+" define mappings leader character
+let mapleader = ','
+" search currently opened files
+nnoremap <leader>b :CtrlPBuffer<cr>
+" toggle search highlight
+nnoremap <leader>s :set hlsearch!<cr>
+" search files in current dir (or ancestor git repo)
+nnoremap <leader>t :CtrlP<cr>
 
-" direct character mappings
-nnoremap / :set hlsearch<CR> \| /                        " ensure highlight on search
-nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>  " insert character at cursor
-nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>  " insert character after cursor
+" insert character at cursor
+nnoremap s :execute 'normal i'.nr2char(getchar())."\e"<cr>
+" insert character after cursor
+nnoremap S :execute 'normal a'.nr2char(getchar())."\e"<cr>
 
 " enable file type detection for indentation
 syntax on

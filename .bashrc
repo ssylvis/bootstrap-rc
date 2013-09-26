@@ -10,5 +10,6 @@ export INPUTRC=~/.inputrc
 export TERM=screen-256color
 
 # Add user aliases
-source .bash_alias
-source .ruby_alias
+for alias in `ls ~/.*_alias`; do
+  source $alias
+done

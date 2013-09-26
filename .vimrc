@@ -13,9 +13,9 @@ set wildmode=longest,list
 
 " leader character mappings
 let mapleader = ','                                    " define leading character
-nmap <leader>b :CtrlPBuffer<CR>                    " search currently opened files
-nmap <leader>c :let @/ = ""<CR>                    " clear search highlighting
-nmap <leader>t :CtrlP<CR>                          " search files in current dir (or ancestor git repo)
+nnoremap <leader>b :CtrlPBuffer<CR>                    " search currently opened files
+nnoremap <leader>c :let @/ = ""<CR>                    " clear search highlighting
+nnoremap <leader>t :CtrlP<CR>                          " search files in current dir (or ancestor git repo)
 
 " direct character mappings
 nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>  " insert character at cursor

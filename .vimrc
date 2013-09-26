@@ -11,6 +11,13 @@ set wildmenu                                           " change to bash-like tab
 set wildignore+=*.gem,*.git,*.svn,*.swp
 set wildmode=longest,list
 
+" function to get search input
+function! SearchInput()
+    call inputsave()
+    let g:search = input('/')
+    call inputrestore()
+endfunction
+
 " define mappings leader character
 let mapleader = ','
 " search currently opened files
@@ -20,6 +27,8 @@ nnoremap <leader>s :set hlsearch!<cr>
 " search files in current dir (or ancestor git repo)
 nnoremap <leader>t :CtrlP<cr>
 
+" ensure highlight on search (and clear status)
+nnoremap / :call SearchInput()<cr> :execute '/' . search<cr> :set hlsearch<cr> :echo<cr>
 " insert character at cursor
 nnoremap s :execute 'normal i'.nr2char(getchar())."\e"<cr>
 " insert character after cursor

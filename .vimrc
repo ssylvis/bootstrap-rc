@@ -11,7 +11,7 @@ set wildmenu                                           " change to bash-like tab
 set wildignore+=*.gem,*.git,*.svn,*.swp
 set wildmode=longest,list
 
-" define mappings leader character
+" define <leader> for some mappings
 let mapleader = ','
 " search currently opened files
 nnoremap <leader>b :CtrlPBuffer<cr>

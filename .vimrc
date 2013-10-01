@@ -11,6 +11,10 @@ set wildmenu                                           " change to bash-like tab
 set wildignore+=*.gem,*.git,*.svn,*.swp
 set wildmode=longest,list
 
+" command mappings for closing buffer
+cnoreabbrev c bdelete
+cnoreabbrev wc w<bar>bdelete
+
 " define <leader> for some mappings
 let mapleader = ','
 " search currently opened files

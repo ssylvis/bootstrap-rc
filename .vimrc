@@ -11,8 +11,11 @@ set wildmenu                                           " change to bash-like tab
 set wildignore+=*.gem,*.git,*.svn,*.swp
 set wildmode=longest,list
 
-" command mappings for closing buffer
+" close current buffer
 cnoreabbrev c bdelete
+" close all buffers
+cnoreabbrev ca %bdelete
+" save and close current buffer
 cnoreabbrev wc w<bar>bdelete
 
 " define <leader> for some mappings

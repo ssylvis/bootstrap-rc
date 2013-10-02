@@ -1,2 +1,7 @@
+# Ctrl left/right arrow to move cursor
 "\eOD": backward-word
 "\eOC": forward-word
+
+# Ctrl W/D to delete words
+"\C-W": backward-kill-word
+"\C-D": kill-word

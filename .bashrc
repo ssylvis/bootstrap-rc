@@ -7,7 +7,6 @@ shopt -s histappend
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 export INPUTRC=~/.inputrc
-export TERM=screen-256color
 
 # Add user aliases
 for alias in `ls ~/.*_alias`; do

@@ -29,6 +29,10 @@ let mapleader = ','
 nnoremap <leader>a :Ack<space>
 " search currently opened files
 nnoremap <leader>b :CtrlPBuffer<cr>
+" open NERDTree finder
+nnoremap <leader>d :NERDTreeToggle<CR>
+" search files in NERDTree
+nnoremap <leader>f :NERDTreeFind<CR>
 " toggle search highlight
 nnoremap <leader>s :set hlsearch!<cr>
 " search files in current dir (or ancestor git repo)

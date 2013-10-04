@@ -15,7 +15,8 @@ Installation
 Dependencies
 ------------
 - [Pathogen.vim](https://github.com/tpope/vim-pathogen) (vim): used to install bundles
+- [NERDTree](https://github.com/scrooloose/nerdtree) (vim): file system explorer
 - [Ctrlp.vim](https://github.com/kien/ctrlp.vim) (vim): used as a fuzzy file finder
 - [Ack.vim](https://github.com/mileszs/ack.vim) (vim): used as a regex pattern matcher
-  (Note: you may need to install ack on your system)
+  (Note you may need to install ack on your system)
 - [Solarized](https://github.com/altercation/vim-colors-solarized) (vim): solarized color scheme

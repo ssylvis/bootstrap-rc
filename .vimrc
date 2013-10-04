@@ -37,6 +37,8 @@ nnoremap <leader>f :NERDTreeFind<cr>
 nnoremap <leader>s :set hlsearch!<cr>
 " search files in current dir (or ancestor git repo)
 nnoremap <leader>t :CtrlP<cr>
+" open (or goto) Quickfix window
+nnoremap <leader>q :copen<cr>
 
 " ensure highlight on search
 nnoremap / :set hlsearch<cr> /

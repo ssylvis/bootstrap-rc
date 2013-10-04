@@ -1,11 +1,16 @@
 set nocompatible                                       " disable vi compatibility
+
+set directory-=.                                       " don't store swapfiles in the current directory
+set expandtab                                          " expand tabs to spaces
 set hlsearch                                           " enable search highlight on startup
+set ignorecase                                         " case-insensitive search
 set incsearch                                          " highlight matches as you type
 set laststatus=2                                       " always show status line
 set number                                             " show line numbers on left margin
 set list                                               " show tabs and trailing spaces
 set listchars=tab:> ,trail:·
 set mouse=a                                            " enable mouse scroll wheel
+set smartcase                                          " case-sensitive search if any caps
 set t_Co=256                                           " use 256 colors
 set wildmenu                                           " change to bash-like tab-complete behavior
 set wildignore+=*.gem,*.git,*.svn,*.swp
@@ -20,6 +25,8 @@ cnoreabbrev wc w<bar>bdelete
 
 " define <leader> for some mappings
 let mapleader = ','
+" search files for pattern using Ack
+nnoremap <leader>a :Ack<space>
 " search currently opened files
 nnoremap <leader>b :CtrlPBuffer<cr>
 " toggle search highlight

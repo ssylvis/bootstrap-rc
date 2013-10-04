@@ -30,9 +30,9 @@ nnoremap <leader>a :Ack<space>
 " search currently opened files
 nnoremap <leader>b :CtrlPBuffer<cr>
 " open NERDTree finder
-nnoremap <leader>d :NERDTreeToggle<CR>
+nnoremap <leader>d :NERDTreeToggle<cr>
 " search files in NERDTree
-nnoremap <leader>f :NERDTreeFind<CR>
+nnoremap <leader>f :NERDTreeFind<cr>
 " toggle search highlight
 nnoremap <leader>s :set hlsearch!<cr>
 " search files in current dir (or ancestor git repo)

@@ -25,8 +25,8 @@ cnoreabbrev wc w<bar>bdelete
 
 " define <leader> for some mappings
 let mapleader = ','
-" search files for pattern using Ack
-nnoremap <leader>a :Ack<space>
+" search pattern using Ack (but don't open first result)
+nnoremap <leader>a :Ack!<space>
 " search currently opened files
 nnoremap <leader>b :CtrlPBuffer<cr>
 " open NERDTree finder
@@ -34,11 +34,11 @@ nnoremap <leader>d :NERDTreeToggle<cr>
 " search files in NERDTree
 nnoremap <leader>f :NERDTreeFind<cr>
 " toggle search highlight
-nnoremap <leader>s :set hlsearch!<cr>
+nnoremap <leader>h :set hlsearch!<cr>
+" open (or goto) Quickfix window
+nnoremap <leader>s :copen<cr>
 " search files in current dir (or ancestor git repo)
 nnoremap <leader>t :CtrlP<cr>
-" open (or goto) Quickfix window
-nnoremap <leader>q :copen<cr>
 
 " ensure highlight on search
 nnoremap / :set hlsearch<cr> /

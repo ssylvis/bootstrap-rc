@@ -16,6 +16,11 @@ set wildmenu                                           " change to bash-like tab
 set wildignore+=*.gem,*.git,*.svn,*.swp
 set wildmode=longest,list
 
+" reload NERDTree on toggle errors
+function! g:NERDTreeToggle()
+  try | :NERDTreeToggle | catch | :NERDTree | endtry
+endfunction
+
 " close current buffer
 cnoreabbrev c bdelete
 " close all buffers
@@ -30,7 +35,7 @@ nnoremap <leader>a :Ack!<space>
 " search currently opened files
 nnoremap <leader>b :CtrlPBuffer<cr>
 " open NERDTree finder
-nnoremap <leader>d :NERDTreeToggle<cr>
+nnoremap <leader>d :call g:NERDTreeToggle()<cr>
 " search files in NERDTree
 nnoremap <leader>f :NERDTreeFind<cr>
 " toggle search highlight

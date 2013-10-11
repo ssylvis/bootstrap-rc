@@ -16,7 +16,12 @@ set wildmenu                                           " change to bash-like tab
 set wildignore+=*.gem,*.git,*.svn,*.swp
 set wildmode=longest,list
 
-" reload NERDTree on toggle errors
+" reload NERDTree on Find errors
+function! g:NERDTreeFind()
+  try | :NERDTreeFind | catch | :NERDTree | endtry
+endfunction
+
+" reload NERDTree on Toggle errors
 function! g:NERDTreeToggle()
   try | :NERDTreeToggle | catch | :NERDTree | endtry
 endfunction
@@ -37,7 +42,7 @@ nnoremap <leader>b :CtrlPBuffer<cr>
 " open NERDTree finder
 nnoremap <leader>d :call g:NERDTreeToggle()<cr>
 " search files in NERDTree
-nnoremap <leader>f :NERDTreeFind<cr>
+nnoremap <leader>f :call g:NERDTreeFind()<cr>
 " toggle search highlight
 nnoremap <leader>h :set hlsearch!<cr>
 " open (or goto) Quickfix window

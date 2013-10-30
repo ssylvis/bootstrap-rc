@@ -26,12 +26,13 @@
 	pushf = push -f origin
 	pushm = push origin master
 	pusho = push origin
-	re = rebase
-	rea = rebase --abort
-	rec = rebase --continue
-	rei = rebase -i
-	rem = rebase -i master
-	resth = reset --hard
+	r = rebase
+	ra = rebase --abort
+	rc = rebase --continue
+	ri = rebase -i
+	rm = rebase -i master
+	rsd = reset --hard
+	rsh = reset HEAD^
 	s = status
 [core]
 	editor = vi

@@ -3,6 +3,7 @@
 	name = Sean Sylvis
 [alias]
 	a = add
+	aa = add .
 	ap = add --patch
 	alias = !git config -l | grep alias
 	b = branch

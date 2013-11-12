@@ -10,6 +10,7 @@ set number                                             " show line numbers on le
 set list                                               " show tabs and trailing spaces
 set listchars=tab:> ,trail:·
 set mouse=a                                            " enable mouse scroll wheel
+set scrolloff=5                                       " maintain _offset_ lines around cursor
 set smartcase                                          " case-sensitive search if any caps
 set t_Co=256                                           " use 256 colors
 set wildmenu                                           " change to bash-like tab-complete behavior

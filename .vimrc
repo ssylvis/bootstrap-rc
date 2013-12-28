@@ -67,7 +67,7 @@ execute pathogen#infect()
 
 " ctrlp options
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](\.git|\.hg|\.svn)|(vendor/bundle)$',
+  \ 'dir': '\v[\/](\.bundle|\.git|\.hg|\.svn)|(vendor/bundle|vendor/cache)$',
   \ 'file': '\v\.(gitignore|gitkeep|rspec)$'
   \ }                                                   " ignore repo directories
 let g:ctrlp_show_hidden = 1                             " search hidden (dot) files

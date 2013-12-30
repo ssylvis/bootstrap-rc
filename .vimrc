@@ -10,8 +10,10 @@ set list                                               " show tabs and trailing 
 set listchars=tab:> ,trail:·
 set number                                             " show line numbers on left margin
 set mouse=a                                            " enable mouse scroll wheel
-set scrolloff=5                                       " maintain _offset_ lines around cursor
+set scrolloff=5                                        " maintain _offset_ lines around cursor
+set shiftwidth=4                                       " four spaces when indenting
 set smartcase                                          " case-sensitive search if any caps
+set softtabstop=4                                      " four spaces used for <tab>
 set t_Co=256                                           " use 256 colors
 set wildignore+=*.gem,*.git,*.svn,*.swp
 set wildmenu                                           " change to bash-like tab-complete behavior

@@ -4,11 +4,11 @@ Configuration files for a new workstation.
 
 Installation
 ------------
-    # Clone the bootstrap repository
-    cd bootstrap
+    # Clone the bootstrap repository in current directory
     git clone https://github.com/ssylvis/bootstrap.git
 
     # Initialize the various children bundles
+    cd bootstrap
     git submodule init
     git submodule update
 

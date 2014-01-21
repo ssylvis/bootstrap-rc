@@ -4,13 +4,13 @@ Resource configuration files for a new workstation.
 
 Installation
 ------------
-  # Clone the bootstrap-rc repository in current directory
-  git clone https://github.com/ssylvis/bootstrap-rc.git
+    # Clone the bootstrap-rc repository in current directory
+    git clone https://github.com/ssylvis/bootstrap-rc.git
 
-  # Initialize the various children bundles
-  cd bootstrap-rc
-  git submodule init
-  git submodule update
+    # Initialize the various children bundles
+    cd bootstrap-rc
+    git submodule init
+    git submodule update
 
 Dependencies
 ------------

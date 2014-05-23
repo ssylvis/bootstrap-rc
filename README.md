@@ -12,6 +12,11 @@ Installation
     git submodule init
     git submodule update
 
+Adding Submodule
+----------------
+    cd bootstrap-rc
+    git submodule add <github.com/module.git> </path/to/module>
+
 Dependencies
 ------------
 - [Ack.vim](https://github.com/mileszs/ack.vim) (vim): used as a regex pattern matcher

@@ -8,6 +8,9 @@ export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 export INPUTRC=~/.inputrc
 
+# Add auto-completion to git
+source ~/git-completion.bash
+
 # Add user aliases
 for alias in `ls ~/.*_alias`; do
   source $alias

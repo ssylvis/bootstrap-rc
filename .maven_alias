@@ -1,5 +1,5 @@
-alias mvn_clean='rm -fr ~/.m2/repository/*'
+alias mvn_clean_all='rm -fr ~/.m2/repository/*'
 alias mvn_compile='mvn compile -DskipTests -T2'
 alias mvn_install='mvn clean install -DskipTests -T2'
-alias mvn_integration='mvn compile -Dintegration -T2'
+alias mvn_integration='mvn integration-test -Dintegration -T2'
 alias mvn_license='mvn license:add-third-party -Dlicense.useMissingFile=true -Dlicense.excludedGroups="com.goindex" -Dlicense.outputDirectory=license -Dlicense.missingFile=license/THIRD-PARTY.properties'

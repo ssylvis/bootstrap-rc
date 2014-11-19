@@ -1,10 +1,8 @@
-git_log_grep() {
-    git log --format='%h %C(yellow)(%an)%C(cyan)%d%Creset %s (%cr)' --grep=$1 --regexp-ignore-case --extended-regexp
-}
-
+alias g='git'
 alias ga='git add .'
 alias gal='alias | grep git'
 alias gap='git add --patch'
+alias gb='git branch'
 alias gbd='git branch -D'
 alias gbm='git branch -m'
 alias gc='git commit --amend'
@@ -33,3 +31,6 @@ alias grm='git rebase -i master'
 alias grpop='git reset --hard HEAD^'
 alias grundo='git reset HEAD^'
 alias gs='git status'
+
+# Add git completion to custom aliases
+__git_complete g __git_main

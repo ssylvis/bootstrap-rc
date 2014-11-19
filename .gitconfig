@@ -2,6 +2,40 @@
 email = ssylvis@gmail.com
 name = Sean Sylvis
 
+[alias]
+a = add .
+al = !git config -l | grep alias
+ap = add --patch
+b = branch
+bd = branch -D
+bm = branch -m
+c = commit --amend
+ca = "!git add .; commit --amend --no-edit"
+ce = commit --amend --no-edit
+cm = commit -m
+d = diff HEAD^
+ds = diff HEAD^ --stat
+l = !git log --format='%h %C(yellow)(%an)%C(cyan)%d%Creset %s (%cr)' -n 20 | cut -c -140
+lg = "!f() { git log --format='%h %C(yellow)(%an)%C(cyan)%d%Creset %s (%cr)' --grep=$1 --regexp-ignore-case --extended-regexp; }; f"
+o = checkout
+ob = checkout -b
+om = checkout master
+pl = pull
+ps = push
+q = stash
+qa = stash apply
+qd = stash drop
+ql = stash list
+qp = stash pop
+ra = rebase --abort
+rc = rebase --continue
+rh = reset HEAD
+ri = rebase -i
+rm = rebase -i master
+rpop = reset --hard HEAD^
+rundo = reset HEAD^
+s = status
+
 [core]
 editor = vi
 

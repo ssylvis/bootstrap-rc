@@ -1,5 +1,15 @@
+git_delete_remote() {
+  BRANCH=$(git rev-parse --abbrev-ref HEAD)
+  git push origin :$BRANCH
+}
+
 git_log_grep() {
   git log --format='%h %C(yellow)(%an)%C(cyan)%d%Creset %s (%cr)' --grep=$1 --regexp-ignore-case --extended-regexp
+}
+
+git_remote_run() {
+  BRANCH=$(git rev-parse --abbrev-ref HEAD)
+  git push origin +$BRANCH
 }
 
 alias g='git'
@@ -10,6 +20,7 @@ alias gap='git add --patch'
 alias gb='git branch'
 alias gbd='git branch -D'
 alias gbm='git branch -m'
+alias gbr='git_delete_remote'
 alias gc='git commit --amend'
 alias gca='git add .; git commit --amend --no-edit'
 alias gce='git commit --amend --no-edit'
@@ -18,12 +29,13 @@ alias gd='git diff'
 alias gdh='git diff HEAD^'
 alias gdm='git diff master'
 alias gds='git diff HEAD^ --stat'
-alias gl="git log --format='%C(auto)%h %C(green)(%an)%C(reset)%C(auto)%d %s (%cr)' -n 20"
+alias gl="git log --format='%C(auto)%h %C(green)(%an)%C(reset)%C(auto)%d %s (%cr)'"
 alias glg='git_log_grep'
 alias go='git checkout'
 alias gob='git checkout -b'
 alias gom='git checkout master'
 alias gp='git pull'
+alias gpr='git_remote_run'
 alias gps='git push origin'
 alias gqa='git stash apply'
 alias gqd='git stash drop'

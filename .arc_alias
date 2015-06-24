@@ -1,0 +1,2 @@
+alias ac='arc diff master --create'
+alias au='arc diff master --update'

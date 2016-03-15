@@ -1,2 +1,5 @@
-alias ac='arc diff master --create'
-alias au='arc diff master --update'
+alias ac='arc diff master --create --reviewers dan,evan'
+alias ad='arc diff master'
+alias ah='arc diff HEAD^ --create --reviewers dan,evan'
+alias al='arc land'
+alias ap='arc diff master --preview'

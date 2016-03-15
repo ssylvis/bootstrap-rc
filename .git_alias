@@ -7,16 +7,11 @@ git_log_grep() {
   git log --format='%h %C(yellow)(%an)%C(cyan)%d%Creset %s (%cr)' --grep=$1 --regexp-ignore-case --extended-regexp
 }
 
-git_remote_run() {
-  BRANCH=$(git rev-parse --abbrev-ref HEAD)
-  git push origin +$BRANCH
-}
-
 alias g='git'
 alias ga='git add'
-alias gaa='git add .'
 alias gal='alias | grep git'
 alias gap='git add --patch'
+alias gau='git add .; git commit -m "cs"'
 alias gb='git branch'
 alias gbd='git branch -D'
 alias gbm='git branch -m'
@@ -35,7 +30,9 @@ alias go='git checkout'
 alias gob='git checkout -b'
 alias gom='git checkout master'
 alias gp='git pull'
-alias gpr='git_remote_run'
+alias gpo='git remote prune origin'
+alias gpop='git reset --hard HEAD^'
+alias gpr='./scripts/remote_precommit.sh'
 alias gps='git push origin'
 alias gqa='git stash apply'
 alias gqd='git stash drop'
@@ -48,9 +45,8 @@ alias grc='git rebase --continue'
 alias grs='git reset --hard'
 alias grh='git reset HEAD'
 alias grm='git rebase -i master'
-alias grpop='git reset --hard HEAD^'
-alias grundo='git reset HEAD^'
 alias gs='git status'
+alias gundo='git reset HEAD^'
 
 # Add git completion to custom aliases
 __git_complete g __git_main

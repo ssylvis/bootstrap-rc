@@ -1,7 +1,6 @@
 alias mvn_clean='rm -fr ~/.m2/repository/com/goindex/javaclient/'
 alias mvn_clean_all='rm -fr ~/.m2/repository/*'
 alias mvn_clean_index='rm -fr ~/.m2/repository/com/goindex/'
-alias mvn_clean_omnico='rm -fr ~/.m2/repository/omnico/'
 alias mvn_compile='mvn clean compile test-compile -T2'
 alias mvn_install='mvn clean install -DskipTests -T2'
 alias mvn_integration='mvn integration-test -T2 -Dintegration -Disolated -Dskip.surefire.tests'

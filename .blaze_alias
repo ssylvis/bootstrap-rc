@@ -1,0 +1,2 @@
+alias blz_build='JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home; blaze build'
+alias blz_release='JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home; blaze release'

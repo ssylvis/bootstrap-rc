@@ -3,6 +3,7 @@ email = ssylvis@gmail.com
 name = Sean Sylvis
 
 [alias]
+d = branch -d
 o = checkout
 r = rebase -i
 

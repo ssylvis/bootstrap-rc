@@ -1,3 +1,2 @@
-if [ -e ~/.bashrc ]; then
-    . ~/.bashrc
-fi
+# Source user environment
+[ -f ~/.bashrc ] && source ~/.bashrc

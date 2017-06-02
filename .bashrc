@@ -11,7 +11,6 @@ export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 # Add own overrides
 export INPUTRC=~/.inputrc
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
 export PATH=${PATH}:~/bin
 
 # Add auto-completion to git

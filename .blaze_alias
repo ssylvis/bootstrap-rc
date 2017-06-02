@@ -1,3 +1,5 @@
-alias blz_build='JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home; blaze build'
-alias blz_intellij='JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home; blaze intellij'
-alias blz_release='JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home; blaze release'
+alias blz_build='blaze build'
+alias blz_intellij='blaze intellij'
+alias blz_release='blaze release'
+alias elasticquery='blaze elasticquery run -- search'
+alias kibana.py='elasticquery'

@@ -8,9 +8,7 @@ Installation
     git clone https://github.com/ssylvis/bootstrap-rc.git
 
     # Initialize the various children bundles
-    cd bootstrap-rc
-    git submodule init
-    git submodule update
+    cd ~/bootstrap-rc && git submodule init && git submodule update
 
 Adding Submodule
 ----------------

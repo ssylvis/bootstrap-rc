@@ -6,9 +6,6 @@ export HISTFILESIZE=10000
 shopt -s histappend
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
-# Source boxen updates to environment
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-
 # Add own overrides
 export INPUTRC=~/.inputrc
 export PATH=${PATH}:~/bin

@@ -12,10 +12,12 @@ Installation
 
 OSX Setup
 ---------
-[Homebrew](https://brew.sh/)
+[Homebrew](https://brew.sh/) (Package Manager)
+
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-[RVM](https://rvm.io/rvm/install)
+[RVM](https://rvm.io/rvm/install) (Ruby Version Manager)
+
     \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 Adding Submodule

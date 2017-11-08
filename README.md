@@ -1,19 +1,19 @@
-bootstrap-rc
-============
+# bootstrap-rc
 Resource configuration files for a new workstation.
 
-Installation
-------------
+## Installation
     # Clone the bootstrap-rc repository in current directory
     git clone https://github.com/ssylvis/bootstrap-rc.git
 
     # Run install script
     ./bootstrap-rc/install.sh
 
-OSX Setup
----------
-Install these developer tools:
+### Adding Submodule
+    cd bootstrap-rc
+    git submodule add <github.com/module.git> </path/to/module>
 
+## OSX Setup
+### Developer Tools
 [Homebrew](https://brew.sh/) (Package Manager)
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -22,28 +22,30 @@ Install these developer tools:
 
     xcode-select --install
 
-Then install a few applications:
+### Apps
+#### PostgreSQL
+
+    brew install postgres
+
+#### Rails
+
+    brew install rails
+
+#### Tmux
 
     brew install tmux
 
-Ruby Setup
-----------
+### Ruby Setup
 [RVM](https://rvm.io/rvm/install) (Ruby Version Manager)
 
     \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
-And ruby version
+ruby versions:
 
     rvm list known
     rvm install [version]
 
-Adding Submodule
-----------------
-    cd bootstrap-rc
-    git submodule add <github.com/module.git> </path/to/module>
-
-Dependencies
-------------
+## Dependencies
 - [Ack.vim](https://github.com/mileszs/ack.vim) (vim): used as a regex pattern matcher
   (Note you may need to install ack on your system)
 - [CoffeeScript.vim](https://github.com/kchmck/vim-coffee-script) (vim): adds support for CoffeeScript

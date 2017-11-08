@@ -14,6 +14,7 @@ OSX Setup
 ---------
 [Homebrew](https://brew.sh/)
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 [RVM](https://rvm.io/rvm/install)
     \curl -sSL https://get.rvm.io | bash -s stable --ruby
 

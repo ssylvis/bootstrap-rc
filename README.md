@@ -20,9 +20,7 @@ OSX Setup
 
     \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
-[Xcode](https://itunes.apple.com/us/app/xcode/id497799835)
-
-Xcode Command-line Tools
+[Xcode](https://itunes.apple.com/us/app/xcode/id497799835) (App and Command-line Tools)
 
     xcode-select --install
 

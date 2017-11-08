@@ -12,17 +12,30 @@ Installation
 
 OSX Setup
 ---------
+Install these developer tools:
+
 [Homebrew](https://brew.sh/) (Package Manager)
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+[Xcode](https://itunes.apple.com/us/app/xcode/id497799835) (App and Command-line Tools)
+
+    xcode-select --install
+
+Then install a few applications:
+
+    brew install tmux
+
+Ruby Setup
+----------
 [RVM](https://rvm.io/rvm/install) (Ruby Version Manager)
 
     \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
-[Xcode](https://itunes.apple.com/us/app/xcode/id497799835) (App and Command-line Tools)
+And ruby version
 
-    xcode-select --install
+    rvm list known
+    rvm install [version]
 
 Adding Submodule
 ----------------

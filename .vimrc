@@ -31,7 +31,7 @@ function! g:NERDTreeToggle()
 endfunction
 
 " close current buffer
-cnoreabbrev c bdelete
+cnoreabbrev c bprevious<bar>bdelete<space>#
 " close all buffers
 cnoreabbrev ca %bdelete
 " save and close current buffer

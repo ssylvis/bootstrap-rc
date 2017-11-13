@@ -23,6 +23,10 @@ Resource configuration files for a new workstation.
     xcode-select --install
 
 ### Apps
+#### Google Protobuf
+
+    brew install protobuf
+
 #### PostgreSQL
 
     brew install postgres

@@ -45,6 +45,12 @@ ruby versions:
     rvm list known
     rvm install [version]
 
+[Bundler](http://bundler.io/) (Gem Manager)
+
+    gem install bundler
+
+*Note* this has to be done once for each RVM installed version of ruby
+
 ## Dependencies
 - [Ack.vim](https://github.com/mileszs/ack.vim) (vim): used as a regex pattern matcher
   (Note you may need to install ack on your system)

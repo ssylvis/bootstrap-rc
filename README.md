@@ -31,10 +31,6 @@ Resource configuration files for a new workstation.
 
     brew install postgres
 
-#### Rails
-
-    brew install rails
-
 #### Tmux
 
     brew install tmux

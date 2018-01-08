@@ -51,8 +51,7 @@ ruby versions:
 
 *Note* this has to be done once for each RVM installed version of ruby
 
-### Sublime Text
-[Sublime Text](https://www.sublimetext.com/)
+### [Sublime Text](https://www.sublimetext.com/)
 
 Install Package Control (Ctrl + Shift + P, "Install Package Control"), then install the following packages
 (*Package Control: Install Package*):

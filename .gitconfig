@@ -10,5 +10,8 @@ r = rebase -i
 [core]
 editor = vi
 
+[credential]
+helper = osxkeychain
+
 [hub]
 protocol = https

@@ -28,7 +28,6 @@ EOT
 
 # git
 ln -s $DIR/.gitconfig
-ln -s $DIR/git-completion.bash
 
 # input
 ln -s $DIR/.inputrc

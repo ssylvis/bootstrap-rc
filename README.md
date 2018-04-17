@@ -23,6 +23,11 @@ Resource configuration files for a new workstation.
     xcode-select --install
 
 ### Apps
+#### Git
+
+    brew install bash-completion
+    curl -o /usr/local/etc/bash_completion.d/git-prompt.sh https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
+
 #### Google Protobuf
 
     brew install protobuf

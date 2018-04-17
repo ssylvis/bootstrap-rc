@@ -11,7 +11,8 @@ export INPUTRC=~/.inputrc
 export PATH=${PATH}:~/bin
 
 # Add auto-completion to git
-source ~/git-completion.bash
+source /usr/local/etc/bash_completion.d/git-completion.bash
+source /usr/local/etc/bash_completion.d/git-prompt.sh
 
 # Override prompt
 PS1="\h:\w$ "

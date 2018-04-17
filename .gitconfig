@@ -1,11 +1,10 @@
-[user]
-email = ssylvis@gmail.com
-name = Sean Sylvis
-
 [alias]
 d = branch -d
 o = checkout
 r = rebase -i
+
+[color]
+ui = auto
 
 [core]
 editor = vi
@@ -13,5 +12,12 @@ editor = vi
 [credential]
 helper = osxkeychain
 
-[hub]
-protocol = https
+[push]
+default = current
+
+[remote "origin"]
+prune = true
+
+[user]
+email = ssylvis@gmail.com
+name = Sean Sylvis

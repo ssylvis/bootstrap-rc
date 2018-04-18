@@ -28,6 +28,18 @@ Resource configuration files for a new workstation.
     brew install bash-completion
     curl -o /usr/local/etc/bash_completion.d/git-prompt.sh https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
 
+#### [(Git)Hub](https://hub.github.com/)
+
+    brew install hub
+
+Add this to your ~/.bashrc
+
+    eval "$(hub alias -s)"
+
+Whitelist your GitHub Enterprise hostname
+
+    git config --global --add hub.host my.example.org
+
 #### Google Protobuf
 
     brew install protobuf

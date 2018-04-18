@@ -1,23 +1,23 @@
 [alias]
-d = branch -d
-o = checkout
-r = rebase -i
+    d = branch -d
+    o = checkout
+    r = rebase -i
 
 [color]
-ui = auto
+    ui = auto
 
 [core]
-editor = vi
+    editor = vi
 
 [credential]
-helper = osxkeychain
+    helper = osxkeychain
 
 [push]
-default = current
+    default = current
 
 [remote "origin"]
-prune = true
+    prune = true
 
 [user]
-email = ssylvis@gmail.com
-name = Sean Sylvis
+    email = ssylvis@gmail.com
+    name = Sean Sylvis

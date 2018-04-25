@@ -20,7 +20,7 @@ if [ -x "$(command -v hub)" ]; then
 fi
 
 # Override prompt
-PS1="\h:\w$ "
+export PS1="\h: \w\$(__git_ps1)\$ "
 
 # Add user aliases
 for alias in `ls ~/.*_alias`; do

@@ -23,7 +23,20 @@ Resource configuration files for a new workstation.
     xcode-select --install
 
 ### Apps
-#### Git
+#### Google Protobuf
+
+    brew install protobuf
+
+#### PostgreSQL
+
+    brew install postgres
+
+#### Tmux
+
+    brew install tmux
+
+### Git
+#### Bash-Completion
 
     brew install bash-completion
     curl -o /usr/local/etc/bash_completion.d/git-prompt.sh https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
@@ -36,21 +49,17 @@ Add this to your ~/.bashrc
 
     eval "$(hub alias -s)"
 
-Whitelist your GitHub Enterprise hostname
+#### GitHub Enterprise
+Whitelist your GHE hostname
 
     git config --global --add hub.host my.example.org
 
-#### Google Protobuf
+#### Merge
+Using [vimdiff](http://www.rosipov.com/blog/use-vimdiff-as-git-mergetool/) as a diff tool:
 
-    brew install protobuf
-
-#### PostgreSQL
-
-    brew install postgres
-
-#### Tmux
-
-    brew install tmux
+    git config --global merge.tool vimdiff
+    git config --global merge.conflictstyle diff3
+    git config --global mergetool.prompt false
 
 ### Ruby Setup
 [RVM](https://rvm.io/rvm/install) (Ruby Version Manager)

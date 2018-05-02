@@ -10,9 +10,19 @@ export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 export INPUTRC=~/.inputrc
 export PATH=${PATH}:~/bin
 
-# Add auto-completion to git
-source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/git-prompt.sh
+# Add bash completion (macOS)
+if [ -x "/usr/local/etc/bash_completion.d" ]; then
+  for file in /usr/local/etc/bash_completion.d/*; do
+    source $file
+  done
+fi
+
+# Add bash completion (unix)
+if [ -x "/etc/bash_completion.d" ]; then
+  for file in /etc/bash_completion.d/*; do
+    source $file
+  done
+fi
 
 # Alias hub, if installed
 if [ -x "$(command -v hub)" ]; then

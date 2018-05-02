@@ -18,11 +18,7 @@ if [ -x "/usr/local/etc/bash_completion.d" ]; then
 fi
 
 # Add bash completion (unix)
-if [ -x "/etc/bash_completion.d" ]; then
-  for file in /etc/bash_completion.d/*; do
-    source $file
-  done
-fi
+[ -x "/etc/bash_completion" ] && source /etc/bash_completion
 
 # Alias hub, if installed
 if [ -x "$(command -v hub)" ]; then

@@ -1,2 +1,8 @@
 alias ..='cd ..'
-alias ll='ls -alG'
+alias ll='ls -al'
+
+# Colorize macOS
+[ "$(uname)" == "Darwin" ] && alias ls='ls -G'
+
+# Colorize unix
+[ "$(uname)" == "Linux" ] && alias ls='ls --color=auto'

@@ -7,7 +7,7 @@ set ignorecase                                         " case-insensitive search
 set incsearch                                          " highlight matches as you type
 set laststatus=2                                       " always show status line
 set list                                               " show tabs and trailing spaces
-set listchars=tab:> ,trail:·
+set listchars="tab:> ,trail:·"
 set number                                             " show line numbers on left margin
 set mouse=a                                            " enable mouse scroll wheel
 set scrolloff=5                                        " maintain _offset_ lines around cursor

@@ -1,3 +1,4 @@
+set autoread                                           " reload file when contents change
 set nocompatible                                       " disable vi compatibility
 
 set directory-=.                                       " don't store swapfiles in the current directory

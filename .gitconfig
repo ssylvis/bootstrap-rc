@@ -1,5 +1,8 @@
 [alias]
+    b = branch
     d = branch -d
+    D = branch -D
+    m = branch -m
     o = checkout
     r = rebase -i
 

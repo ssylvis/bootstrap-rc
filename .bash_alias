@@ -1,4 +1,5 @@
 alias ..='cd ..'
+alias less='less -iR'
 alias ll='ls -al'
 
 # Colorize macOS

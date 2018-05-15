@@ -77,6 +77,7 @@ ruby versions:
 
 *Note* this has to be done once for each RVM installed version of ruby
 
+## Editors
 ### [Sublime Text](https://www.sublimetext.com/)
 
 Install Package Control (Ctrl + Shift + P, "Install Package Control"), then install the following packages
@@ -85,12 +86,18 @@ Install Package Control (Ctrl + Shift + P, "Install Package Control"), then inst
 - Solarized Color Scheme
 - SyncedSideBar
 
-## Dependencies
-- [Ack.vim](https://github.com/mileszs/ack.vim) (vim): used as a regex pattern matcher
-  (Note you may need to install ack on your system)
-- [CoffeeScript.vim](https://github.com/kchmck/vim-coffee-script) (vim): adds support for CoffeeScript
-- [commentary.vim](https://github.com/tpope/vim-commentary) (vim): easily (un)comment lines
-- [Ctrlp.vim](https://github.com/kien/ctrlp.vim) (vim): used as a fuzzy file finder
-- [NERDTree](https://github.com/scrooloose/nerdtree) (vim): file system explorer
-- [Pathogen.vim](https://github.com/tpope/vim-pathogen) (vim): used to install bundles
-- [Solarized](https://github.com/altercation/vim-colors-solarized) (vim): solarized color scheme
+### Vim
+#### Ack
+Ack is used as a faster alternative to grep.
+
+    brew install ack
+
+#### Plugins
+The following plugins are installed as part of this bootstrap:
+- [Ack.vim](https://github.com/mileszs/ack.vim): faster alternative to grep
+- [CoffeeScript.vim](https://github.com/kchmck/vim-coffee-script): adds support for CoffeeScript
+- [commentary.vim](https://github.com/tpope/vim-commentary): easily (un)comment lines
+- [Ctrlp.vim](https://github.com/kien/ctrlp.vim): used as a fuzzy file finder
+- [NERDTree](https://github.com/scrooloose/nerdtree): file system explorer
+- [Pathogen.vim](https://github.com/tpope/vim-pathogen): used to install bundles
+- [Solarized](https://github.com/altercation/vim-colors-solarized): solarized color scheme

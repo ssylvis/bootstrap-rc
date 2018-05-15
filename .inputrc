@@ -1,6 +1,6 @@
 # Ctrl left/right arrow to move cursor
-"\eOD": backward-word
-"\eOC": forward-word
+"\e[1;5D": backward-word 
+"\e[1;5C": forward-word
 
 # Ctrl W/D to delete words
 "\C-W": backward-kill-word

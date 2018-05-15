@@ -1,2 +1,13 @@
 alias gw='./gradlew'
-alias gwb='gw build'
+
+gwa() {
+  gw "$1":assemble
+}
+
+gwb() {
+  gw "$1":build
+}
+
+gwr() {
+  gw "$1":run
+}

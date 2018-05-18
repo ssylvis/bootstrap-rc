@@ -8,6 +8,10 @@ gwb() {
   gw "$1":build
 }
 
+gwc() {
+  gw "$1":clean
+}
+
 gwr() {
   gw "$1":run
 }

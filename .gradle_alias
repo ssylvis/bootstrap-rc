@@ -15,3 +15,7 @@ gwc() {
 gwr() {
   gw "$1":run
 }
+
+gws() {
+  gw "$1":spotlessApply
+}

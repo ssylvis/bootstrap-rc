@@ -69,11 +69,13 @@ filetype plugin indent on
 " execute pathogen bundler
 execute pathogen#infect()
 
-" ctrlp options
+" ctrlp options (https://github.com/kien/ctrlp.vim/blob/master/doc/ctrlp.txt)
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/](\.bundle|\.git|\.hg|\.svn)|(vendor/bundle|vendor/cache)$',
   \ 'file': '\v\.(gitignore|gitkeep|rspec)$'
   \ }                                                   " ignore repo directories
+"let g:ctrlp_max_depth = 40                              " depth of directory tree
+let g:ctrlp_max_files = 0                               " no limit on indexed files
 let g:ctrlp_show_hidden = 1                             " search hidden (dot) files
 
 " dark solarized colorscheme

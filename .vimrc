@@ -21,6 +21,11 @@ set wildignore+=*.gem,*.git,*.svn,*.swp
 set wildmenu                                           " change to bash-like tab-complete behavior
 set wildmode=longest,list
 
+" enable mouse selection for columns >223, when available
+if has('mouse_sgr')
+  set ttymouse=sgr
+endif
+
 " reload NERDTree on Find errors
 function! g:NERDTreeFind()
   try | :NERDTreeFind | catch | :NERDTree | endtry

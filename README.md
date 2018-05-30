@@ -35,6 +35,11 @@ Resource configuration files for a new workstation.
 
     brew install tmux
 
+#### Vim
+`vi` is installed as part of Xcode but this adds support for `mouse_sgr` (mouse selection for >233 columns)
+
+    brew install vim
+
 ### Git
 #### Bash-Completion
 

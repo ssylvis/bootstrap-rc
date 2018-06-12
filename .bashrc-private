@@ -17,6 +17,9 @@ if [ -e "/usr/local/etc/bash_completion.d" ]; then
   done
 fi
 
+# Ensure git completions have been loaded (unix)
+[ -x "$(command -v _completion_loader)" ] && _completion_loader git
+
 # Add bash completion (unix)
 [ -e "/etc/bash_completion" ] && source /etc/bash_completion
 

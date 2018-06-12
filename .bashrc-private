@@ -11,14 +11,14 @@ export INPUTRC=~/.inputrc
 export PATH=${PATH}:~/bin
 
 # Add bash completion (macOS)
-if [ -x "/usr/local/etc/bash_completion.d" ]; then
+if [ -e "/usr/local/etc/bash_completion.d" ]; then
   for file in /usr/local/etc/bash_completion.d/*; do
     source $file
   done
 fi
 
 # Add bash completion (unix)
-[ -x "/etc/bash_completion" ] && source /etc/bash_completion
+[ -e "/etc/bash_completion" ] && source /etc/bash_completion
 
 # Alias hub, if installed
 if [ -x "$(command -v hub)" ]; then

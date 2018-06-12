@@ -1,6 +1,7 @@
 alias ..='cd ..'
 alias less='less -iR'
 alias ll='ls -al'
+alias vi='vim'
 
 # Colorize macOS
 [ "$(uname)" == "Darwin" ] && alias ls='ls -G'

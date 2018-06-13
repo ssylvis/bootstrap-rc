@@ -103,6 +103,7 @@ The following plugins are installed as part of this bootstrap:
 - [CoffeeScript.vim](https://github.com/kchmck/vim-coffee-script): adds support for CoffeeScript
 - [commentary.vim](https://github.com/tpope/vim-commentary): easily (un)comment lines
 - [Ctrlp.vim](https://github.com/kien/ctrlp.vim): used as a fuzzy file finder
+- [indentLine](https://github.com/Yggdroot/indentLine): shows vertical lines for each indent level
 - [NERDTree](https://github.com/scrooloose/nerdtree): file system explorer
 - [Pathogen.vim](https://github.com/tpope/vim-pathogen): used to install bundles
 - [Solarized](https://github.com/altercation/vim-colors-solarized): solarized color scheme

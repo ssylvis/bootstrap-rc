@@ -1,3 +1,3 @@
-alias bexec='bundle exec'
-alias brake='bundle exec rake'
-alias brspec='bundle exec rspec --fail-fast'
+alias be='bundle exec'
+alias br='bundle exec rake'
+alias bs='bundle exec rspec --fail-fast'

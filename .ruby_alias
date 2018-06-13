@@ -1,3 +1,5 @@
 alias be='bundle exec'
 alias br='bundle exec rake'
 alias bs='bundle exec rspec --fail-fast'
+alias bz='bundle exec zeus'
+alias bzs='bundle exec zeus rspec'

@@ -1,6 +1,7 @@
 set autoread                                           " reload file when contents change
 set nocompatible                                       " disable vi compatibility
 
+set backspace=eol,indent,start                         " Allow backspace over line breaks, indent
 set directory-=.                                       " don't store swapfiles in the current directory
 set expandtab                                          " expand tabs to spaces
 set hlsearch                                           " enable search highlight on startup

@@ -82,6 +82,10 @@ ruby versions:
 
 *Note* this has to be done once for each RVM installed version of ruby
 
+## Linux Setup
+### Tmux
+See [install_tmux.sh](https://gist.github.com/ssylvis/5f5d36f0a404c9a34be08d4a51aaab1d) on installing the latest version of tmux.
+
 ## Editors
 ### [Sublime Text](https://www.sublimetext.com/)
 

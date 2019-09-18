@@ -1,5 +1,8 @@
 # Source user environment
 [ -f ~/.bashrc ] && source ~/.bashrc
 
-# Load RVM into a shell session
+# Load RVM into shell
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Load rbenv into shell
+[[ -x "$(command -v rbenv)" ]] && eval "$(rbenv init -)"

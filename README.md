@@ -67,6 +67,18 @@ Using [vimdiff](http://www.rosipov.com/blog/use-vimdiff-as-git-mergetool/) as a 
     git config --global mergetool.prompt false
 
 ### Ruby Setup
+[rbenv](https://github.com/rbenv/rbenv)
+1. Setup in Homebrew
+
+    brew install rbenv
+    rbenv init
+
+1. Setup in Linux (needs additional ruby-build install)
+
+    apt-get install rbenv
+    mkdir -p "$(rbenv root)"/plugins
+    git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
 [RVM](https://rvm.io/rvm/install) (Ruby Version Manager)
 
     \curl -sSL https://get.rvm.io | bash -s stable --ruby

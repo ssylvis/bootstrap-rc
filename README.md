@@ -13,6 +13,8 @@ Resource configuration files for a new workstation.
     git submodule add <github.com/module.git> </path/to/module>
 
 ## OSX Setup
+See also https://sourabhbajaj.com/mac-setup.
+
 ### Developer Tools
 [Homebrew](https://brew.sh/) (Package Manager)
 
@@ -39,6 +41,16 @@ Resource configuration files for a new workstation.
 `vi` is installed as part of Xcode but this adds support for `mouse_sgr` (mouse selection for >233 columns)
 
     brew install vim
+
+### Editors
+#### Visual Studio Code
+Recommended for Javascript/Typescript or Ruby development. The standard install works well, but you will want to add the
+following extensions:
+
+*Ruby*
+
+    gem install ruby-debug-ide
+    gem install solargraph
 
 ### Git
 #### Bash-Completion

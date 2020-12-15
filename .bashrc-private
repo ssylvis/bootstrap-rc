@@ -11,11 +11,7 @@ export INPUTRC=~/.inputrc
 export PATH=${PATH}:~/bin
 
 # Add bash completion (macOS)
-if [ -e "/usr/local/etc/bash_completion.d" ]; then
-  for file in /usr/local/etc/bash_completion.d/*; do
-    source $file
-  done
-fi
+[ -e "/usr/local/etc/bash_completion" ] && source /usr/local/etc/bash_completion
 
 # Add bash completion (unix)
 [ -e "/etc/bash_completion" ] && source /etc/bash_completion

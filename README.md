@@ -47,7 +47,7 @@ See also https://sourabhbajaj.com/mac-setup.
 Recommended for Javascript/Typescript or Ruby development. The standard install works well, but you will want to add the
 following extensions:
 
-*Ruby*
+**Ruby**
 
     gem install ruby-debug-ide
     gem install solargraph

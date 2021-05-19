@@ -78,6 +78,16 @@ Using [vimdiff](http://www.rosipov.com/blog/use-vimdiff-as-git-mergetool/) as a 
     git config --global merge.conflictstyle diff3
     git config --global mergetool.prompt false
 
+### Node.js Setup
+1. Setup [nvm](https://github.com/nvm-sh/nvm)
+
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+1. Setup Node.js
+
+    nvm ls
+    nvm install [version]
+
 ### Ruby Setup
 [rbenv](https://github.com/rbenv/rbenv)
 1. Setup in Homebrew

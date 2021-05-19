@@ -48,6 +48,10 @@ ruby versions:
 
 *Note* this has to be done once for each RVM installed version of ruby
 
+### Yarn
+
+    npm install --global yarn
+
 ## OSX Setup
 See also https://sourabhbajaj.com/mac-setup.
 

@@ -6,7 +6,7 @@ Resource configuration files for a new workstation.
     git clone https://github.com/ssylvis/bootstrap-rc.git
 
     # Run install script
-    ./bootstrap-rc/install.sh
+    ./bootstrap-rc/bin/install.sh
 
 ### Adding Submodule
     cd bootstrap-rc
@@ -108,7 +108,10 @@ ruby versions:
 
 ## Linux Setup
 ### Tmux
-See [install_tmux.sh](https://gist.github.com/ssylvis/5f5d36f0a404c9a34be08d4a51aaab1d) on installing the latest version of tmux.
+Many Linux distos are on an older verison of tmux. Run `install_tmux.sh` to install the latest version of tmux.
+
+    cd bootstrap-rc/
+    ./bin/install_tmux.sh
 
 ## Editors
 ### [Sublime Text](https://www.sublimetext.com/)

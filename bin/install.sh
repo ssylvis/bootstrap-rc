@@ -3,9 +3,6 @@
 # Capture bootstrap-rc dir
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
-# Initialize the various children bundles
-cd $DIR && git submodule init && git submodule update
-
 # Install symlinks in user.home
 cd $HOME
 
@@ -43,3 +40,6 @@ ln -s $DIR/.tmux.conf
 ln -s $DIR/.ackrc
 ln -s $DIR/.vim
 ln -s $DIR/.vimrc
+
+# Initialize the various children bundles
+cd $DIR && git submodule init && git submodule update

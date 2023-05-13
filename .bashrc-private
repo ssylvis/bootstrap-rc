@@ -10,14 +10,10 @@ export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 export INPUTRC=~/.inputrc
 export PATH=${PATH}:~/bin
 
-# Add bash completion (macOS)
-[ -e "/usr/local/etc/bash_completion" ] && source /usr/local/etc/bash_completion
-
-# Add bash completion (unix)
-[ -e "/etc/bash_completion" ] && source /etc/bash_completion
-
-# Ensure git completions have been loaded (unix)
-_completion_loader git > /dev/null 2>&1
+# Add bash completion
+for file in `ls ${HOME}/bootstrap-rc/profile.d/*.sh`; do
+  source $file
+done
 
 # Alias hub, if installed
 if [ -x "$(command -v hub)" ]; then
